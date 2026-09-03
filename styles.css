@@ -640,3 +640,194 @@ button {
   .scene-img, .back-stack, .hero-title, .intro-copy,
   .story-panel, .sights-track, .sights-slider { transition: none; }
 }
+
+
+
+/* =========================
+   MOBILE REFINEMENT
+   ========================= */
+
+@media (max-width: 640px) {
+
+  /* Main stage */
+  .stage {
+    min-height: 100svh;
+    height: 100svh;
+  }
+
+  /* Header */
+  .site-header {
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    padding: 22px 18px;
+  }
+
+  .site-logo {
+    font-size: 18px;
+    letter-spacing: -0.2px;
+  }
+
+  .language-switcher {
+    font-size: 14px;
+  }
+
+  /* Navigation */
+  .site-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    padding-top: 2px;
+    overflow: visible;
+  }
+
+  .site-nav a {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  /* MOSTAR title */
+  .hero-title {
+    top: 21vh;
+    width: 100%;
+    font-size: clamp(3.4rem, 16vw, 4.3rem);
+    line-height: 0.82;
+    letter-spacing: -1px;
+  }
+
+  /* Main bridge */
+  .bridge-img {
+    bottom: 7vh;
+    width: 155vw;
+    max-width: none;
+  }
+
+  /* Keep secondary image nicely framed */
+  .frame-two-img {
+    width: 145vw;
+    max-width: none;
+  }
+
+  .splitframe-img {
+    width: 145vw;
+    max-width: none;
+    bottom: -1vh;
+  }
+
+  /* Intro text */
+  .intro-copy {
+    left: 50%;
+    bottom: 28px;
+    width: calc(100vw - 30px);
+  }
+
+  .intro-copy p {
+    max-width: 350px;
+    font-size: 0.94rem;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  /* Tags */
+  .hero-tags {
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .hero-tags span {
+    min-height: 34px;
+    padding: 0 13px;
+    font-size: 0.78rem;
+  }
+
+  /* Story sections */
+  .story-panel {
+    width: calc(100vw - 32px);
+    top: 43%;
+  }
+
+  .story-panel h2 {
+    font-size: 2.3rem;
+    line-height: 0.95;
+  }
+
+  .story-panel p {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .story-panel-bazaar {
+    top: 27%;
+  }
+
+  /* Facts */
+  .facts {
+    width: 100%;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .facts dt {
+    font-size: 2.35rem;
+  }
+
+  .facts dd {
+    margin-top: 12px;
+    font-size: 0.88rem;
+  }
+
+  /* Sight cards */
+  .sights-slider {
+    width: 100%;
+  }
+
+  .sights-track {
+    gap: 10px;
+  }
+
+  .sight-card {
+    flex-basis: 82vw;
+    height: 205px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .sight-card h3 {
+    left: 20px;
+    right: 20px;
+    bottom: 58px;
+    font-size: 21px;
+  }
+
+  .sight-card p {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+  }
+
+  .sight-kicker {
+    margin-bottom: 40px;
+    font-size: 11px;
+  }
+
+  .sight-pin {
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .sights-controls {
+    top: calc(var(--sights-screen-top) + 220px);
+    left: 20px;
+    gap: 10px;
+  }
+
+  .sight-nav {
+    width: 46px;
+    height: 46px;
+  }
+}
